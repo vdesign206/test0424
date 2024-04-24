@@ -16,7 +16,28 @@
 
       output += '\n';
     }
-    console.log(output);
+
+    let output2 = '';
+    const size = 5;
+    for (let i = 1; i <= size; i++) {
+      for (let j = size; j > i; j--) {
+        output2 += ' ';
+      }
+      for (let k = 0; k < 2*i - 1; k++) {
+        output2 += '*';
+      }
+      output2 += '\n';
+    }
+    for (let i = size-1; i > 0; i--) {
+      for (let j = size; j > i; j--) {
+        output2 += ' ';
+      }
+      for (let k = 0; k < 2*i - 1; k++) {
+        output2 += '*';
+      }
+      output2 += '\n';
+    }
+    alert(output2);
   </script>
 </body>
 </html>
